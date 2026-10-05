@@ -1,0 +1,15 @@
+{
+  "base": {
+    "chainId": 8453,
+    "Board": { "address": "0xca3E637985f1866b92e56fCf82Bae7cbf479c7Bf", "startBlock": 52182575 },
+    "ListRegistry": { "address": "0x0aE4C0c4e9D17816C79AE140A6E3466ffC14b791" },
+    "AuthorBlocklistGate": { "address": "0x4A3206b83a43094F6E32d39f3D7a24B667fb86a8", "list": "blocked" }
+  },
+  "baseSepolia": {
+    "chainId": 84532,
+    "Board": { "address": "0xca3E637985f1866b92e56fCf82Bae7cbf479c7Bf", "startBlock": 47693092 },
+    "ListRegistry": { "address": "0x0aE4C0c4e9D17816C79AE140A6E3466ffC14b791" },
+    "AuthorBlocklistGate": { "address": "0x4A3206b83a43094F6E32d39f3D7a24B667fb86a8", "list": "blocked" },
+    "ClosedReplyGate": { "address": "0x82f6C7E5f9E64C7083162aBC22D71d8d394164AA" }
+  }
+}
