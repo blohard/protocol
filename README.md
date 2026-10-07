@@ -35,7 +35,7 @@ deployed on each chain.
 | `Board` | `0xca3E637985f1866b92e56fCf82Bae7cbf479c7Bf` | same |
 | `ListRegistry` | `0x0aE4C0c4e9D17816C79AE140A6E3466ffC14b791` | same |
 | `AuthorBlocklistGate` | `0x4A3206b83a43094F6E32d39f3D7a24B667fb86a8` | same |
-| `ClosedReplyGate` | not deployed | `0x82f6C7E5f9E64C7083162aBC22D71d8d394164AA` |
+| `ClosedReplyGate` | `0x82f6C7E5f9E64C7083162aBC22D71d8d394164AA` | `0x82f6C7E5f9E64C7083162aBC22D71d8d394164AA` |
 
 Every contract is deployed with CREATE2 through the deterministic deployer proxy and a fixed salt,
 so one version of the code has one address on every chain (SPEC.md §9). The compiler version and
