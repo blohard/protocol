@@ -339,10 +339,11 @@ A message is a `text/plain` record. Readers render from the original bytes after
 never from a form a host derived. The formatting is deliberately small:
 
 - Text, spaces and line breaks are preserved. HTML is text, never markup.
-- `*bold*` and `_italics_`: one pair of markers, on one line, not nested. The opening marker must
-  not follow a letter or digit and must precede non-whitespace; the closing marker must follow
-  non-whitespace and must not precede a letter or digit. Unmatched markers, doubled markers and
-  markers after a backslash stay literal.
+- `*bold*` and `_italics_`: single-marker pairs on one line. Bold and italics may nest in either
+  order (`*_both_*` or `_*both*_`), with at most one open pair of each style. Pairs close in reverse
+  opening order. The opening marker must not follow a letter or digit and must precede
+  non-whitespace; the closing marker must follow non-whitespace and must not precede a letter or
+  digit. Unmatched markers, doubled markers and markers after a backslash stay literal.
 - HTTP and HTTPS URLs and bare domains become links, bare domains defaulting to HTTPS. The link
   shows its destination, never a substitute label. URLs with credentials and other schemes stay
   text.
